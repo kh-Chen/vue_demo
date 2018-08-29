@@ -1,0 +1,15 @@
+import Vue from 'vue'
+import VueI18n from 'vue-i18n'
+
+Vue.use(VueI18n);
+
+const i18n = new VueI18n({
+  locale: 'en', // 语言标识
+  messages: {
+    'zh': require('./long_zh_CN'),
+    'en': require('./long_en_US')
+  }
+})
+Vue.prototype.$getText = i18n.t;
+
+export default i18n;
