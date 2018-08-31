@@ -15,7 +15,7 @@ Vue.use(iView);
 Vue.use(component);
 Vue.use(fn);
 
-axios.defaults.baseURL = "/testVue";
+axios.defaults.baseURL = process.env.API_ROOT;
 Vue.prototype.$ajax = axios;
 Vue.prototype.$vars = vars;
 

@@ -1,5 +1,5 @@
 const vars = {
-  urlhead:'/testVue'
+  urlhead:process.env.API_ROOT
 }
 
 export default vars;
